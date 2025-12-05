@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #453d3d;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+    padding-bottom: 0.3em;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    padding-bottom: 0.5em;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    color: #182c95;
+}
+
+.main {
+    text-align: center;
+}
+
+.company-id {
+    font-size: 10px;
+    padding-top: 0.7em;
+}
+
+/* LINK HOVER EFFECT */
+
+a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #182c95;
+    visibility: hidden;
+    transition: all 0.15s ease-in-out;
+}
+
+a:hover:before {
+    visibility: visible;
+    width: 100%;
+}
